@@ -2,14 +2,6 @@
   <img src="./img/banner.png" />
 </p>
 
-[![Version][version-badge]][version-link]
-[![npm][npm-badge]][npm-link]
-[![Test CI][ci-badge]][ci-link]
-[![Code Coverage][coverage-badge]][coverage-link]
-[![License][license-badge]][license-link]
-[![Docs][docs-badge]][docs-link]
-[![Discussions][discussions-badge]][discussions-link]
-
 # Seaport.js
 
 [Seaport][seaport-link] is a new marketplace protocol for safely and efficiently buying and selling NFTs. This is a TypeScript library intended to make interfacing with the contract reasonable and easy.
