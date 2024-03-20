@@ -31,7 +31,7 @@ We recommend using [nvm](https://github.com/nvm-sh/nvm) to manage Node.js versio
 Then, in your project, run:
 
 ```console
-npm install --save @opensea/seaport-js
+npm install --save @g21/seaport-js
 ```
 
 ## Getting Started
@@ -43,7 +43,7 @@ Instantiate your instance of seaport using your ethers provider:
 #### Through a browser provider (i.e. Metamask)
 
 ```js
-import { Seaport } from "@opensea/seaport-js";
+import { Seaport } from "@g21/seaport-js";
 import { ethers } from "ethers";
 
 const provider = new ethers.BrowserProvider(window.ethereum);
@@ -54,7 +54,7 @@ const seaport = new Seaport(provider);
 #### Through a RPC Provider (i.e. Alchemy)
 
 ```js
-import { Seaport } from "@opensea/seaport-js";
+import { Seaport } from "@g21/seaport-js";
 import { ethers } from "ethers";
 
 const provider = new ethers.JsonRpcProvider(
@@ -67,7 +67,7 @@ const seaport = new Seaport(provider);
 #### With custom signer
 
 ```js
-import { Seaport } from "@opensea/seaport-js";
+import { Seaport } from "@g21/seaport-js";
 import { ethers } from "ethers";
 
 // Provider must be provided to the signer when supplying a custom signer
@@ -159,27 +159,3 @@ const { executeAllActions: executeAllFulfillActions } =
 
 const transaction = executeAllFulfillActions();
 ```
-
-## Contributing
-
-See [the contributing guide](./.github/CONTRIBUTING.md) for detailed instructions on how to get started with this project.
-
-## License
-
-[MIT](LICENSE) Copyright 2022 Ozone Networks, Inc.
-
-[seaport-link]: https://github.com/ProjectOpenSea/seaport
-[version-badge]: https://img.shields.io/github/package-json/v/ProjectOpenSea/seaport-js
-[version-link]: https://github.com/ProjectOpenSea/seaport-js/releases
-[npm-badge]: https://img.shields.io/npm/v/@opensea/seaport-js?color=red
-[npm-link]: https://www.npmjs.com/package/@opensea/seaport-js
-[ci-badge]: https://github.com/ProjectOpenSea/seaport-js/actions/workflows/main.yaml/badge.svg
-[ci-link]: https://github.com/ProjectOpenSea/seaport-js/actions/workflows/main.yaml
-[coverage-badge]: https://codecov.io/gh/ProjectOpenSea/seaport-js/branch/main/graph/badge.svg
-[coverage-link]: https://codecov.io/gh/ProjectOpenSea/seaport-js
-[license-badge]: https://img.shields.io/github/license/ProjectOpenSea/seaport-js
-[license-link]: https://github.com/ProjectOpenSea/seaport-js/blob/main/LICENSE
-[docs-badge]: https://img.shields.io/badge/Seaport.js-documentation-informational
-[docs-link]: https://github.com/ProjectOpenSea/seaport-js/blob/main/README.md#getting-started
-[discussions-badge]: https://img.shields.io/badge/Seaport.js-discussions-blueviolet
-[discussions-link]: https://github.com/ProjectOpenSea/seaport-js/discussions
